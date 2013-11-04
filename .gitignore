@@ -16,3 +16,7 @@ npm-debug.log
 .idea/
 bower_components/
 node_modules/
+
+public/assets/js/restish.js.map
+
+public/assets/js/restish.js

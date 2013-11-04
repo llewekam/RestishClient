@@ -1,5 +1,5 @@
 doctype 5
-html
+html(ng-app)
     head
         title= title
         link(rel='stylesheet', href='/assets/css/bootstrap.css')
@@ -19,12 +19,12 @@ html
                         li.active
                             a(href='#') Home
 
-        div.container
+        div.container(ng-controller='RestishCtrl')
             div.jumbotron
-                h1= title
-                p Welcome to #{title}
+                h1 {{page.title}}
 
         script(src='/assets/js/bootstrap.min.js')
         script(src='/assets/js/jquery.min.js')
         script(src='/assets/js/angular.min.js')
+        script(src='/assets/js/restish.js')
 
